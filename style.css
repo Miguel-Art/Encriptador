@@ -1,0 +1,117 @@
+*{
+    background: #bd95d4;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    overflow-y: hidden;
+    
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 3%;
+    animation: giro 3s 1 2s;
+    transition: 1s linear 0s;
+    margin-left: 25px;
+}
+
+.logo:hover{
+    transform: rotate(-360deg);
+}
+@keyframes giro{
+    100%{
+    transform: rotate(360deg);
+    }
+}
+
+.titulo-encriptador{
+   
+    font-size: 1rem;
+    color: #323778;
+}
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 180px;
+    
+}
+
+.text-area {
+    height: 265px;
+    border: none;
+    color: #0A3871;
+    margin-top: 30px;
+    padding: 2px;
+    text-transform: lowercase;
+}
+::placeholder { color: #0A3871; }
+  .text-area:focus {
+      outline: none;
+    }
+
+.mensaje{
+    height: 470px;
+    background: white;
+    background-image: url("imagenes/cifrado.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    margin-left: 98px;
+    margin-top: 50px;
+    padding-left: 38px;
+    position: fixed;
+}
+.mensaje:focus {
+    outline: none;
+}
+
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-desencriptar {
+    background-color: #370a71;
+    border: 1px solid #370a71;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+
+.btn-encriptar {
+    background-color: #370a71;
+    border: 1px solid #370a71;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+.copiar {
+    background-color: #370a71;
+    border: 1px solid #370a71;
+    border-radius: 24px;
+    color: white;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 120px;
+    margin-top: 565px;
+    position: absolute;
+    width: 370px;
+    top: -40px;
+}
+
+.informacion {
+    color: #495057;
+    font-size:18px;
+}
